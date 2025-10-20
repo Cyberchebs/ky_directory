@@ -1,5 +1,5 @@
 "use client";
-import React, { useActionState, useState } from "react";
+import { useActionState, useState } from "react";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import MDEditor from "@uiw/react-md-editor";
@@ -36,7 +36,10 @@ const StartupForm = () => {
           description: "Your startup pitch has been created successfully",
         });
 
-        router.push(`/startup`);
+        // Add a small delay or use setTimeout to ensure the toast shows
+        setTimeout(() => {
+          router.push(`/startup/${result._id}`); // Use the actual ID from result
+        }, 500);
       }
 
       return result;

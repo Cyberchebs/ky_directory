@@ -39,7 +39,7 @@ export const createPitch = async (
     };
 
     const result = await writeClient.create({ _type: "startup", ...startup });
-    parseServerActionResponse({
+    return parseServerActionResponse({
       ...result,
       error: "",
       status: "SUCCESS",
