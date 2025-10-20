@@ -15,7 +15,7 @@ export const createPitch = async (
   if (!session)
     return parseServerActionResponse({
       error: "not signed in",
-      status: "Error",
+      status: "ERROR",
     });
 
   const { title, description, category, link } = Object.fromEntries(
