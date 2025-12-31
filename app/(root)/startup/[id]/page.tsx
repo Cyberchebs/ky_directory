@@ -12,7 +12,7 @@ import { Suspense } from "react";
 import View from "@/components/View";
 import StartUpCard, { StartupTypeCard } from "@/components/StartUpCard";
 const md = markdownit();
-export const experimtntal_ppr = true;
+export const experimental_ppr = true;
 
 const page = async ({ params }: { params: Promise<{ id: string }> }) => {
   const id = (await params).id;
