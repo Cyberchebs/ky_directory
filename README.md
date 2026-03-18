@@ -1,6 +1,16 @@
 This is a [Next.js](https://nextjs.org) project where innovators can share tech ideas to connect with entreprenuers 
 
 
+## Technologies used
+
+. Nextjs
+. sanity 
+. typescript
+. tailwind
+. oauth
+
+
+
 ## Getting Started
 
 First, run the development server:
